@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>About — Prince Goti | Full Stack Developer</title>
+  <meta name="description" content="Learn about Prince Goti — a Full Stack Developer with a B.Tech in ICT from PDEU, experience in AI/ML and software engineering, and 400+ competitive programming solutions.">
+  <meta name="keywords" content="Prince Goti, About, Developer, PDEU, DRC India, Software Engineer, Full Stack">
+  <meta name="author" content="Prince Ashokbhai Goti">
+  <meta name="theme-color" content="#050a18">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="About — Prince Goti | Full Stack Developer">
+  <meta property="og:description" content="B.Tech in ICT from PDEU with CGPA 9.06. Experienced in AI-powered software, full-stack development, and competitive programming.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme Initialization (Prevents flashing on page load) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Floating Background Shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape bg-shape--1"></div>
+    <div class="bg-shape bg-shape--2"></div>
+    <div class="bg-shape bg-shape--3"></div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="navbar__overlay" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Prince Goti Home">Prince Goti</a>
+      <ul class="navbar__menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" class="navbar__link active" role="menuitem">About</a></li>
+        <li role="none"><a href="skills.html" class="navbar__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="projects.html" class="navbar__link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
+        <li role="none"><a href="resume.html" class="navbar__link" role="menuitem">Resume</a></li>
+        <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="navbar__right">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon">☀️</span>
+        </button>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page-content">
+
+    <!-- ══ Page Header ══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Get To Know Me</span>
+          <h1 class="section__title">About Me</h1>
+          <p class="section__subtitle">A passionate software engineer driven by curiosity, continuous learning, and a commitment to building impactful solutions.</p>
+        </div>
+
+        <!-- ══ About Grid ══ -->
+        <div class="about-grid">
+
+          <!-- Image Side -->
+          <div class="about-image-section reveal">
+            <div class="about-image-wrapper">
+              <div id="about-3d-container" class="about__3d-container">
+                <div class="viewer-loader">
+                  <div class="loader-spinner"></div>
+                  <div class="loader-progress">0%</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Content Side -->
+          <div class="about-content">
+            <!-- Professional Summary -->
+            <h3 class="reveal">Professional Summary</h3>
+            <p class="reveal">
+              I am Prince Ashokbhai Goti, a dedicated Software Engineer and B.Tech graduate in Information &amp; Communication Technology from Pandit Deendayal Energy University, Gandhinagar. With a CGPA of 9.06/10.0, I have built a strong foundation in data structures, algorithms, system design, and software development principles.
+            </p>
+            <p class="reveal">
+              Currently working as a Software Development Intern at DRC India, I build AI-powered solutions for diamond and jewelry inspection using Python, OpenCV, and deep learning. My prior experience at Unlock Discounts involved developing user-facing e-commerce features with React.js and RESTful APIs.
+            </p>
+
+            <!-- Career Objective -->
+            <h3 class="reveal">Career Objective</h3>
+            <p class="reveal">
+              To leverage my expertise in full-stack development, AI/ML, and distributed systems to create high-performance, scalable software solutions that drive real business impact. I am passionate about engineering excellence and aim to contribute to innovative products at leading technology companies.
+            </p>
+
+            <!-- Personal Strengths -->
+            <h3 class="reveal">Strengths</h3>
+            <div class="strengths-grid reveal">
+              <div class="strength-item"><span class="icon">🎯</span> Problem Solving (400+ problems)</div>
+              <div class="strength-item"><span class="icon">⚡</span> Quick Learner</div>
+              <div class="strength-item"><span class="icon">🏗️</span> System Design Thinking</div>
+              <div class="strength-item"><span class="icon">🤝</span> Team Collaboration</div>
+              <div class="strength-item"><span class="icon">🔬</span> Research Oriented</div>
+              <div class="strength-item"><span class="icon">📐</span> Clean Code Advocate</div>
+            </div>
+
+            <!-- Resume Download -->
+            <div class="reveal mt-2">
+              <a href="assets/resume/resume.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">📄 Download Resume</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Education Section ══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Academic Background</span>
+          <h2 class="section__title">Education</h2>
+        </div>
+        <div class="timeline" style="max-width: 700px; margin: 0 auto;">
+          <div class="timeline__item reveal">
+            <span class="timeline__date">Oct 2022 – May 2026</span>
+            <h3 class="timeline__title">Bachelor of Technology in ICT</h3>
+            <p class="timeline__subtitle">Pandit Deendayal Energy University — Gandhinagar, India</p>
+            <p class="timeline__desc">CGPA: 9.06/10.0 — Focused on data structures, algorithms, system design, distributed systems, and software engineering.</p>
+          </div>
+          <div class="timeline__item reveal reveal-delay-1">
+            <span class="timeline__date">2019 – 2022</span>
+            <h3 class="timeline__title">Higher Secondary Education</h3>
+            <p class="timeline__subtitle">Aspire Public School — Surat, India</p>
+            <p class="timeline__desc">12th GSHSEB: 98.56 PR — 10th GSHSEB: 99.03 PR. Strong academic track record with excellence in science and mathematics.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Experience Section ══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">Professional Journey</span>
+          <h2 class="section__title">Experience</h2>
+        </div>
+        <div class="timeline" style="max-width: 700px; margin: 0 auto;">
+          <div class="timeline__item reveal">
+            <span class="timeline__date">Jan 2026 – Present</span>
+            <h3 class="timeline__title">Software Development Intern</h3>
+            <p class="timeline__subtitle">DRC India</p>
+            <ul class="timeline__desc">
+              <li>Developed AI-powered software solutions for diamond and jewelry inspection using Python, OpenCV, and Computer Vision</li>
+              <li>Built automated diamond detection and boundary segmentation systems improving counting speed and analysis accuracy</li>
+              <li>Implemented deep learning pipelines for real/fake diamond identification and automated quality inspection</li>
+              <li>Optimized real-time industrial workflows using multithreading, ROI optimization, and efficient image-processing algorithms</li>
+            </ul>
+          </div>
+          <div class="timeline__item reveal reveal-delay-1">
+            <span class="timeline__date">Dec 2025 – Jan 2026</span>
+            <h3 class="timeline__title">Contract Software Developer (Backend)</h3>
+            <p class="timeline__subtitle">Mercor</p>
+            <ul class="timeline__desc">
+              <li>Engineered robust backend features and RESTful APIs using Java and Spring Boot to support scalable software architectures.</li>
+              <li>Collaborated closely with cross-functional teams to integrate backend services, ensuring seamless performance and maintainability.</li>
+              <li>Optimized database queries and streamlined API response times during an intensive, fast-paced contract period.</li>
+            </ul>
+          </div>
+          <div class="timeline__item reveal reveal-delay-1">
+            <span class="timeline__date">May 2025 – Aug 2025</span>
+            <h3 class="timeline__title">Software Development Engineer Intern</h3>
+            <p class="timeline__subtitle">Unlock Discounts</p>
+            <ul class="timeline__desc">
+              <li>Developed user-facing features for e-commerce platform using React.js with RESTful API integration</li>
+              <li>Optimized UI/UX with responsive layouts, achieving 30% reduction in post-deployment bugs</li>
+              <li>Participated in Agile sprints, daily standups, and code reviews for faster delivery and high code quality</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Developer Journey ══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">My Path</span>
+          <h2 class="section__title">Developer Journey</h2>
+        </div>
+        <div class="glass-card reveal" style="max-width: 800px; margin: 0 auto;">
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.9; margin-bottom: var(--space-md);">
+            My journey into software development began during my school years with a fascination for how technology can solve real-world problems. Excelling in academics with a 99.03 PR in 10th grade and 98.56 PR in 12th grade, I secured admission to PDEU with a JEE Main percentile of 95.96.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.9; margin-bottom: var(--space-md);">
+            At university, I dove deep into Java, data structures, and full-stack development — building projects like a Job Portal with microservices architecture and a Business Management application. My curiosity led me to explore AI/ML, where I built a Bitcoin Price Prediction tool using LSTM neural networks.
+          </p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.9;">
+            Today, I combine my skills in full-stack engineering and AI to build production-grade software at DRC India, solving complex industrial challenges in diamond inspection through computer vision and deep learning. With 400+ competitive programming problems solved, I continue to sharpen my problem-solving abilities every day.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA ══ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2>Want to Know More?</h2>
+          <p>Check out my skills, projects, or get in touch directly.</p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="skills.html" class="btn btn--primary">View Skills</a>
+            <a href="contact.html" class="btn btn--outline">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Prince Goti</div>
+          <p class="footer__desc">Full Stack Developer & Software Engineer crafting scalable, production-ready applications with modern technologies.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/prince-goti-08191625a" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://github.com/PRINCEGOTI12" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+            <a href="mailto:princegoti2010@gmail.com" class="footer__social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="about.html" class="footer__link">About</a>
+            <a href="skills.html" class="footer__link">Skills</a>
+            <a href="projects.html" class="footer__link">Projects</a>
+            <a href="services.html" class="footer__link">Services</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__links">
+            <a href="mailto:princegoti2010@gmail.com" class="footer__link">princegoti2010@gmail.com</a>
+            <a href="tel:+919909245452" class="footer__link">(+91) 99092-45452</a>
+            <span class="footer__link">Surat, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Prince Goti. Crafted with <span class="heart">♥</span></p>
+        <button class="footer__back-top" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js?v=1.1"></script>
+
+  <!-- Three.js 3D Viewer Libraries & Script -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/loaders/GLTFLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.147.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://unpkg.com/meshoptimizer@0.18.1/meshopt_decoder.js"></script>
+  <script src="assets/js/three-viewer.js"></script>
+</body>
+</html>

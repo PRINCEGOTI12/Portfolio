@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Services — Prince Goti | What I Offer</title>
+  <meta name="description" content="Professional software development services by Prince Goti — web development, REST APIs, AI/ML integration, cloud deployment, database design, and more.">
+  <meta name="keywords" content="Prince Goti, Services, Web Development, REST API, AI ML, Cloud, Database, Software">
+  <meta name="author" content="Prince Ashokbhai Goti">
+  <meta name="theme-color" content="#050a18">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Services — Prince Goti | What I Offer">
+  <meta property="og:description" content="Web development, AI/ML integration, REST APIs, cloud deployment, and custom software by Prince Goti.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme Initialization (Prevents flashing on page load) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Floating Background Shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape bg-shape--1"></div>
+    <div class="bg-shape bg-shape--2"></div>
+    <div class="bg-shape bg-shape--3"></div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="navbar__overlay" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Prince Goti Home">Prince Goti</a>
+      <ul class="navbar__menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
+        <li role="none"><a href="skills.html" class="navbar__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="projects.html" class="navbar__link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="services.html" class="navbar__link active" role="menuitem">Services</a></li>
+        <li role="none"><a href="resume.html" class="navbar__link" role="menuitem">Resume</a></li>
+        <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="navbar__right">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon">☀️</span>
+        </button>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page-content">
+
+    <!-- ══ Page Header ══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">What I Offer</span>
+          <h1 class="section__title">Services</h1>
+          <p class="section__subtitle">Professional software development services tailored for businesses, startups, and clients worldwide.</p>
+        </div>
+
+        <!-- ══ Services Grid ══ -->
+        <div class="services-grid">
+
+          <!-- Service 1: Website Development -->
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon">🌐</div>
+            <h2 class="service-card__title">Website Development</h2>
+            <p class="service-card__desc">Modern, responsive, and SEO-optimized websites using HTML, CSS, JavaScript, React.js, and industry best practices. From landing pages to complex web applications.</p>
+          </div>
+
+          <!-- Service 2: Django Web Application -->
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">🐍</div>
+            <h2 class="service-card__title">Django Web Application</h2>
+            <p class="service-card__desc">Full-stack Python Django web applications with clean architecture, template rendering, ORM-powered database integration, and secure user authentication systems.</p>
+          </div>
+
+          <!-- Service 3: REST API Development -->
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon">🔗</div>
+            <h2 class="service-card__title">REST API Development</h2>
+            <p class="service-card__desc">Secure, scalable RESTful API backends using Spring Boot or Django REST Framework with JWT authentication, role-based access control, and comprehensive documentation.</p>
+          </div>
+
+          <!-- Service 4: Admin Dashboard -->
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon">📊</div>
+            <h2 class="service-card__title">Admin Dashboard</h2>
+            <p class="service-card__desc">Feature-rich admin panels and dashboards with data visualization, user management, analytics views, and role-based access for business operations.</p>
+          </div>
+
+          <!-- Service 5: AI/ML Integration -->
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">🧠</div>
+            <h2 class="service-card__title">AI/ML Integration</h2>
+            <p class="service-card__desc">Intelligent features powered by TensorFlow, deep learning models, and machine learning pipelines — from prediction systems to automated decision-making tools.</p>
+          </div>
+
+          <!-- Service 6: Image Processing Solution -->
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon">👁️</div>
+            <h2 class="service-card__title">Image Processing Solution</h2>
+            <p class="service-card__desc">Computer vision and image-processing solutions using OpenCV — object detection, segmentation, real-time analysis, and automated quality inspection systems.</p>
+          </div>
+
+          <!-- Service 7: Database Design -->
+          <div class="service-card reveal reveal-delay-1">
+            <div class="service-card__icon">🗄️</div>
+            <h2 class="service-card__title">Database Design</h2>
+            <p class="service-card__desc">Efficient relational database design with MySQL, schema optimization, indexing strategies, Hibernate/JPA integration, and data migration solutions.</p>
+          </div>
+
+          <!-- Service 8: Cloud Deployment -->
+          <div class="service-card reveal reveal-delay-2">
+            <div class="service-card__icon">☁️</div>
+            <h2 class="service-card__title">Cloud Deployment</h2>
+            <p class="service-card__desc">Application deployment on AWS with Docker containerization, CI/CD pipeline setup, Linux server configuration, and production-ready infrastructure management.</p>
+          </div>
+
+          <!-- Service 9: Custom Software Development -->
+          <div class="service-card reveal reveal-delay-3">
+            <div class="service-card__icon">⚙️</div>
+            <h2 class="service-card__title">Custom Software Development</h2>
+            <p class="service-card__desc">End-to-end software solutions tailored to your business requirements — from requirement analysis and architecture design to development, testing, and deployment.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Process Section ══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section__header reveal">
+          <span class="section__label">How I Work</span>
+          <h2 class="section__title">My Process</h2>
+          <p class="section__subtitle">A systematic approach to delivering high-quality software solutions.</p>
+        </div>
+        <div class="services-grid" style="grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));">
+          <div class="glass-card reveal reveal-delay-1" style="text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: var(--space-md);">💬</div>
+            <h3 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-sm);">1. Discovery</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Understanding your goals, requirements, and project scope through detailed discussions.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-2" style="text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: var(--space-md);">📐</div>
+            <h3 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-sm);">2. Design</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Architecture planning, UI/UX design, and technical specifications for optimal solutions.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-3" style="text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: var(--space-md);">💻</div>
+            <h3 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-sm);">3. Develop</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Clean, tested, production-ready code with regular progress updates and milestone reviews.</p>
+          </div>
+          <div class="glass-card reveal reveal-delay-4" style="text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: var(--space-md);">🚀</div>
+            <h3 style="font-family: var(--font-primary); font-size: 1rem; font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-sm);">4. Deliver</h3>
+            <p style="font-size: 0.85rem; color: var(--text-secondary);">Deployment, documentation, and post-launch support to ensure smooth operations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA ══ -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2>Ready to Start Your Project?</h2>
+          <p>Let's discuss your requirements and bring your ideas to life.</p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="contact.html" class="btn btn--primary">Get a Quote</a>
+            <a href="projects.html" class="btn btn--outline">View My Work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Prince Goti</div>
+          <p class="footer__desc">Full Stack Developer & Software Engineer crafting scalable, production-ready applications with modern technologies.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/prince-goti-08191625a" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://github.com/PRINCEGOTI12" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+            <a href="mailto:princegoti2010@gmail.com" class="footer__social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="about.html" class="footer__link">About</a>
+            <a href="skills.html" class="footer__link">Skills</a>
+            <a href="projects.html" class="footer__link">Projects</a>
+            <a href="services.html" class="footer__link">Services</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__links">
+            <a href="mailto:princegoti2010@gmail.com" class="footer__link">princegoti2010@gmail.com</a>
+            <a href="tel:+919909245452" class="footer__link">(+91) 99092-45452</a>
+            <span class="footer__link">Surat, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Prince Goti. Crafted with <span class="heart">♥</span></p>
+        <button class="footer__back-top" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js?v=1.1"></script>
+</body>
+</html>

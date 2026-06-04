@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Contact — Prince Goti | Get In Touch</title>
+  <meta name="description"
+    content="Get in touch with Prince Goti for software development, freelance work, job opportunities, or project collaborations.">
+  <meta name="keywords"
+    content="Prince Goti, Contact, Hire Developer, Freelance, Software Engineer, Full Stack Developer">
+  <meta name="author" content="Prince Ashokbhai Goti">
+  <meta name="theme-color" content="#050a18">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Contact — Prince Goti | Get In Touch">
+  <meta property="og:description"
+    content="Reach out to Prince Goti for development projects, collaboration, or opportunities.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme Initialization (Prevents flashing on page load) -->
+  <script>
+    (function () {
+      const theme = localStorage.getItem('theme') || 'light';
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+</head>
+
+<body>
+
+  <!-- Floating Background Shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape bg-shape--1"></div>
+    <div class="bg-shape bg-shape--2"></div>
+    <div class="bg-shape bg-shape--3"></div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="navbar__overlay" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Prince Goti Home">Prince Goti</a>
+      <ul class="navbar__menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
+        <li role="none"><a href="skills.html" class="navbar__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="projects.html" class="navbar__link" role="menuitem">Projects</a></li>
+        <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
+        <li role="none"><a href="resume.html" class="navbar__link" role="menuitem">Resume</a></li>
+        <li role="none"><a href="contact.html" class="navbar__link active" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="navbar__right">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon">☀️</span>
+        </button>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+          aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page-content">
+
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">Let's Connect</span>
+          <h1 class="section__title">Get In Touch</h1>
+          <p class="section__subtitle">Have a project in mind, a question, or just want to say hello? I'd love to hear
+            from you.</p>
+        </div>
+
+        <!-- ══ Contact Grid ══ -->
+        <div class="contact-grid">
+
+          <!-- Contact Information -->
+          <div class="contact-info">
+            <div class="contact-info__item reveal">
+              <div class="contact-info__icon">📧</div>
+              <div>
+                <div class="contact-info__label">Email</div>
+                <!-- UPDATE: Replace with your email -->
+                <div class="contact-info__value"><a href="mailto:princegoti2010@gmail.com">princegoti2010@gmail.com</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-info__item reveal reveal-delay-1">
+              <div class="contact-info__icon">📞</div>
+              <div>
+                <div class="contact-info__label">Phone</div>
+                <!-- UPDATE: Replace with your phone number -->
+                <div class="contact-info__value"><a href="tel:+919909245452">(+91) 99092-45452</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info__item reveal reveal-delay-2">
+              <div class="contact-info__icon">🔗</div>
+              <div>
+                <div class="contact-info__label">LinkedIn</div>
+                <!-- UPDATE: Replace with your LinkedIn URL -->
+                <div class="contact-info__value"><a href="https://www.linkedin.com/in/prince-goti-08191625a"
+                    target="_blank" rel="noopener noreferrer">linkedin.com/in/prince-goti</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info__item reveal reveal-delay-3">
+              <div class="contact-info__icon">🐙</div>
+              <div>
+                <div class="contact-info__label">GitHub</div>
+                <!-- UPDATE: Replace with your GitHub URL -->
+                <div class="contact-info__value"><a href="https://github.com/PRINCEGOTI12" target="_blank"
+                    rel="noopener noreferrer">github.com/PRINCEGOTI12</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info__item reveal reveal-delay-4">
+              <div class="contact-info__icon">📍</div>
+              <div>
+                <div class="contact-info__label">Location</div>
+                <div class="contact-info__value">Surat, Gujarat, India</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <form class="contact-form reveal" id="contactForm" action="https://formsubmit.co/princegoti2010@gmail.com"
+            method="POST" novalidate>
+            <!-- Honeypot spam protection -->
+            <input type="text" name="_honey" style="display:none">
+            <!-- Disable captcha if desired (free tier displays it on formsubmit page) -->
+            <input type="hidden" name="_captcha" value="true">
+
+            <h2
+              style="font-family: var(--font-primary); font-size: 1.2rem; font-weight: 700; color: var(--text-heading); margin-bottom: var(--space-xl);">
+              Send a Message</h2>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required aria-required="true"
+                  autocomplete="name">
+              </div>
+              <div class="form-group">
+                <label for="email">Your Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required aria-required="true"
+                  autocomplete="email">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Tell me about your project, idea, or how I can help..." required
+                aria-required="true"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary" style="width: 100%; justify-content: center;">
+              Send Message →
+            </button>
+
+            <div class="form-status" role="alert" aria-live="polite"></div>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ Availability ══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cta-section reveal">
+          <div
+            style="display: inline-flex; align-items: center; gap: var(--space-sm); margin-bottom: var(--space-lg); padding: 0.5rem 1.2rem; background: rgba(16, 185, 129, 0.1); border: 1px solid rgba(16, 185, 129, 0.3); border-radius: var(--radius-full); font-size: 0.85rem; color: var(--accent-green);">
+            <span
+              style="width: 8px; height: 8px; border-radius: 50%; background: var(--accent-green); display: inline-block; box-shadow: 0 0 8px var(--accent-green);"></span>
+            Currently Available
+          </div>
+          <h2>Open to Opportunities</h2>
+          <p>I'm available for full-time positions, freelance projects, and consulting engagements. Let's discuss how I
+            can contribute to your team or project.</p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="assets/resume/resume.pdf" class="btn btn--primary" target="_blank" rel="noopener noreferrer">📄
+              Download Resume</a>
+            <a href="https://www.linkedin.com/in/prince-goti-08191625a" class="btn btn--outline" target="_blank"
+              rel="noopener noreferrer">Connect on LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Prince Goti</div>
+          <p class="footer__desc">Full Stack Developer & Software Engineer crafting scalable, production-ready
+            applications with modern technologies.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/prince-goti-08191625a" class="footer__social-link"
+              aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://github.com/PRINCEGOTI12" class="footer__social-link" aria-label="GitHub" target="_blank"
+              rel="noopener noreferrer">GH</a>
+            <a href="mailto:princegoti2010@gmail.com" class="footer__social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="about.html" class="footer__link">About</a>
+            <a href="skills.html" class="footer__link">Skills</a>
+            <a href="projects.html" class="footer__link">Projects</a>
+            <a href="services.html" class="footer__link">Services</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__links">
+            <a href="mailto:princegoti2010@gmail.com" class="footer__link">princegoti122004@gmail.com</a>
+            <a href="tel:+919909245452" class="footer__link">(+91) 99092-45452</a>
+            <span class="footer__link">Surat, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Prince Goti. Crafted with <span class="heart">♥</span></p>
+        <button class="footer__back-top" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>

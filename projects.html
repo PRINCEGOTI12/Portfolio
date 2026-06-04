@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- SEO Meta Tags -->
+  <title>Projects — Prince Goti | Portfolio</title>
+  <meta name="description" content="Explore Prince Goti's projects — Job Portal Application, Bitcoin Price Prediction Tool, Business Management System, and more.">
+  <meta name="keywords" content="Prince Goti, Projects, Job Portal, Bitcoin Prediction, Spring Boot, TensorFlow, Full Stack">
+  <meta name="author" content="Prince Ashokbhai Goti">
+  <meta name="theme-color" content="#050a18">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Projects — Prince Goti | Portfolio">
+  <meta property="og:description" content="Full-stack web apps, AI/ML tools, and enterprise-grade software projects by Prince Goti.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Theme Initialization (Prevents flashing on page load) -->
+  <script>
+    (function() {
+      const theme = localStorage.getItem('theme') || 'light';
+      if (theme === 'light') {
+        document.documentElement.classList.add('light-theme');
+      }
+    })();
+  </script>
+</head>
+<body>
+
+  <!-- Floating Background Shapes -->
+  <div class="bg-shapes" aria-hidden="true">
+    <div class="bg-shape bg-shape--1"></div>
+    <div class="bg-shape bg-shape--2"></div>
+    <div class="bg-shape bg-shape--3"></div>
+  </div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="navbar__overlay" aria-hidden="true"></div>
+
+  <!-- ── Navigation ── -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="navbar__container">
+      <a href="index.html" class="navbar__logo" aria-label="Prince Goti Home">Prince Goti</a>
+      <ul class="navbar__menu" id="navMenu" role="menubar">
+        <li role="none"><a href="index.html" class="navbar__link" role="menuitem">Home</a></li>
+        <li role="none"><a href="about.html" class="navbar__link" role="menuitem">About</a></li>
+        <li role="none"><a href="skills.html" class="navbar__link" role="menuitem">Skills</a></li>
+        <li role="none"><a href="projects.html" class="navbar__link active" role="menuitem">Projects</a></li>
+        <li role="none"><a href="services.html" class="navbar__link" role="menuitem">Services</a></li>
+        <li role="none"><a href="resume.html" class="navbar__link" role="menuitem">Resume</a></li>
+        <li role="none"><a href="contact.html" class="navbar__link" role="menuitem">Contact</a></li>
+      </ul>
+      <div class="navbar__right">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Dark/Light Theme">
+          <span class="theme-toggle-icon">☀️</span>
+        </button>
+        <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navMenu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ── Main Content ── -->
+  <main class="page-content">
+
+    <!-- ══ Page Header ══ -->
+    <section class="section">
+      <div class="container">
+        <div class="section__header">
+          <span class="section__label">My Work</span>
+          <h1 class="section__title">Projects</h1>
+          <p class="section__subtitle">A showcase of applications I've designed and built — from full-stack web platforms to AI/ML solutions.</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-bar reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="aiml">AI/ML</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+        </div>
+
+        <!-- ══ Projects Grid ══ -->
+        <div class="projects-grid">
+
+          <!-- Project 1: Job Portal Application -->
+          <article class="project-card reveal reveal-delay-1" data-category="web software">
+            <div class="project-card__header">
+              <div class="project-card__icon">💼</div>
+              <div class="project-card__links">
+                <!-- UPDATE: Replace # with actual GitHub repo link for Job Portal -->
+                <a href="https://github.com/PRINCEGOTI12" class="project-card__link" aria-label="View GitHub Repository" target="_blank" rel="noopener noreferrer">🔗</a>
+                <!-- UPDATE: Replace # with live demo link -->
+                <a href="#" class="project-card__link" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">🌐</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Job Portal Application</h2>
+              <p class="project-card__desc">
+                Full-stack job portal designed to streamline recruitment workflows with secure authentication, role-based access control, and a scalable microservices architecture. By automating candidate screening and data management, it successfully reduced recruiter manual work by 40%.
+              </p>
+              <ul class="project-card__features">
+                <li>Spring Security authentication & role-based access control</li>
+                <li>CRUD APIs with Spring JPA for efficient database operations</li>
+                <li>Microservices architecture for scalability & fault tolerance</li>
+                <li>React.js frontend with responsive UI</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Spring Boot</span>
+                <span class="project-card__tag">React.js</span>
+                <span class="project-card__tag">MySQL</span>
+                <span class="project-card__tag">Microservices</span>
+                <span class="project-card__tag">HTML/CSS</span>
+                <span class="project-card__tag">JavaScript</span>
+                <span class="project-card__tag">Spring Security</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Bitcoin Price Prediction -->
+          <article class="project-card reveal reveal-delay-2" data-category="aiml software">
+            <div class="project-card__header">
+              <div class="project-card__icon">📈</div>
+              <div class="project-card__links">
+                <!-- UPDATE: Replace # with actual GitHub repo link for Bitcoin Prediction -->
+                <a href="https://github.com/PRINCEGOTI12" class="project-card__link" aria-label="View GitHub Repository" target="_blank" rel="noopener noreferrer">🔗</a>
+                <a href="#" class="project-card__link" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">🌐</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Bitcoin Price Prediction Tool</h2>
+              <p class="project-card__desc">
+                An ML-powered Bitcoin price forecasting system using LSTM, GRU, and CNN neural networks with comprehensive data preprocessing, normalization pipelines, and evaluation metrics. Improved forecasting accuracy by 12%.
+              </p>
+              <ul class="project-card__features">
+                <li>LSTM, GRU & CNN architectures for time-series prediction</li>
+                <li>Data preprocessing, normalization & feature engineering</li>
+                <li>Hyperparameter tuning for 12% accuracy improvement</li>
+                <li>Matplotlib visualizations for market trend analysis</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-card__tag">TensorFlow</span>
+                <span class="project-card__tag">Keras</span>
+                <span class="project-card__tag">LSTM</span>
+                <span class="project-card__tag">GRU</span>
+                <span class="project-card__tag">CNN</span>
+                <span class="project-card__tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Business Management Web Application -->
+          <article class="project-card reveal reveal-delay-3" data-category="web software">
+            <div class="project-card__header">
+              <div class="project-card__icon">🏢</div>
+              <div class="project-card__links">
+                <!-- UPDATE: Replace # with actual GitHub repo link for Business Management -->
+                <a href="https://github.com/PRINCEGOTI12" class="project-card__link" aria-label="View GitHub Repository" target="_blank" rel="noopener noreferrer">🔗</a>
+                <a href="#" class="project-card__link" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">🌐</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Business Management System</h2>
+              <p class="project-card__desc">
+                A comprehensive, full-stack business management application capable of efficiently handling complex customer, inventory, and order workflows. Built with a robust Spring Boot MVC architecture, it ensures secure data handling via role-based access control and seamless frontend interactions.
+              </p>
+              <ul class="project-card__features">
+                <li>Spring Security with structured Admin/User role access</li>
+                <li>Hibernate/JPA for efficient data persistence</li>
+                <li>Automated schema management with MySQL</li>
+                <li>Dynamic Thymeleaf-based user interface</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Spring Boot</span>
+                <span class="project-card__tag">Java</span>
+                <span class="project-card__tag">MySQL</span>
+                <span class="project-card__tag">Thymeleaf</span>
+                <span class="project-card__tag">Spring Security</span>
+                <span class="project-card__tag">HTML/CSS</span>
+                <span class="project-card__tag">React.js</span>
+                <span class="project-card__tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4: Quotation Management Dashboard -->
+          <article class="project-card reveal reveal-delay-4" data-category="web software">
+            <div class="project-card__header">
+              <div class="project-card__icon">📊</div>
+              <div class="project-card__links">
+                <a href="#" class="project-card__link" aria-label="View GitHub Repository" target="_blank" rel="noopener noreferrer">🔗</a>
+                <a href="https://www.quotation.drcindia.in/" class="project-card__link" aria-label="View Live Demo" target="_blank" rel="noopener noreferrer">🌐</a>
+              </div>
+            </div>
+            <div class="project-card__body">
+              <h2 class="project-card__title">Quotation Management Dashboard</h2>
+              <p class="project-card__desc">
+                A comprehensive system to manage users, bank details, customers, and quotations. Features automated PDF generation and user activity tracking.
+              </p>
+              <ul class="project-card__features">
+                <li>Automated Quotation PDF generation</li>
+                <li>Comprehensive User, Customer & Bank management</li>
+                <li>Real-time user activity tracking</li>
+                <li>Integrated SMTP for mail OTP & PDF notifications</li>
+              </ul>
+              <div class="project-card__tags">
+                <span class="project-card__tag">Django</span>
+                <span class="project-card__tag">Python</span>
+                <span class="project-card__tag">SQLite</span>
+                <span class="project-card__tag">HTML/CSS</span>
+                <span class="project-card__tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CTA ══ -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="cta-section reveal">
+          <h2>Interested in Working Together?</h2>
+          <p>I'm always open to discussing new projects and collaborations.</p>
+          <div class="btn-group" style="justify-content: center;">
+            <a href="contact.html" class="btn btn--primary">Get In Touch</a>
+            <a href="https://github.com/PRINCEGOTI12" class="btn btn--outline" target="_blank" rel="noopener noreferrer">View GitHub →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__logo">Prince Goti</div>
+          <p class="footer__desc">Full Stack Developer & Software Engineer crafting scalable, production-ready applications with modern technologies.</p>
+          <div class="footer__social">
+            <a href="https://www.linkedin.com/in/prince-goti-08191625a" class="footer__social-link" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">in</a>
+            <a href="https://github.com/PRINCEGOTI12" class="footer__social-link" aria-label="GitHub" target="_blank" rel="noopener noreferrer">GH</a>
+            <a href="mailto:princegoti2010@gmail.com" class="footer__social-link" aria-label="Email">✉</a>
+          </div>
+        </div>
+        <div>
+          <h3 class="footer__heading">Quick Links</h3>
+          <nav class="footer__links" aria-label="Footer navigation">
+            <a href="about.html" class="footer__link">About</a>
+            <a href="skills.html" class="footer__link">Skills</a>
+            <a href="projects.html" class="footer__link">Projects</a>
+            <a href="services.html" class="footer__link">Services</a>
+          </nav>
+        </div>
+        <div>
+          <h3 class="footer__heading">Contact</h3>
+          <div class="footer__links">
+            <a href="mailto:princegoti2010@gmail.com" class="footer__link">princegoti2010@gmail.com</a>
+            <a href="tel:+919909245452" class="footer__link">(+91) 99092-45452</a>
+            <span class="footer__link">Surat, Gujarat, India</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">© 2026 Prince Goti. Crafted with <span class="heart">♥</span></p>
+        <button class="footer__back-top" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js?v=1.1"></script>
+</body>
+</html>
