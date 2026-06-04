@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://princegoti.tech/sitemap.xml

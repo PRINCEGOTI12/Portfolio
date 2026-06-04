@@ -240,6 +240,8 @@ function initContactForm() {
   if (!form) return;
 
   form.addEventListener('submit', (e) => {
+    e.preventDefault();
+
     const name = form.querySelector('#name');
     const email = form.querySelector('#email');
     const message = form.querySelector('#message');
@@ -248,22 +250,57 @@ function initContactForm() {
 
     // Simple validation
     if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-      e.preventDefault();
       showFormStatus(status, 'Please fill in all required fields.', 'error');
       return;
     }
 
     if (!isValidEmail(email.value)) {
-      e.preventDefault();
       showFormStatus(status, 'Please enter a valid email address.', 'error');
       return;
     }
 
-    // Since this is a standard form submission, the page will navigate to FormSubmit.co.
-    // Displaying a sending indicator improves visual experience before navigation completes.
+    // Disable button and show sending indicator
     submitBtn.disabled = true;
+    const originalBtnText = submitBtn.innerHTML;
     submitBtn.innerHTML = 'Sending... ⏳';
     showFormStatus(status, 'Sending message, please wait...', 'info');
+
+    // Prepare form data
+    const formData = {};
+    new FormData(form).forEach((value, key) => {
+      formData[key] = value;
+    });
+
+    // Send using FormSubmit AJAX endpoint
+    const actionUrl = form.getAttribute('action').replace('formsubmit.co/', 'formsubmit.co/ajax/');
+
+    fetch(actionUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => {
+      if (response.ok) {
+        return response.json();
+      } else {
+        throw new Error('Server error');
+      }
+    })
+    .then(data => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+      showFormStatus(status, 'Thank you! Your message has been sent successfully.', 'success');
+      form.reset();
+    })
+    .catch(error => {
+      submitBtn.disabled = false;
+      submitBtn.innerHTML = originalBtnText;
+      showFormStatus(status, 'Oops! Something went wrong. Please try again later.', 'error');
+      console.error('Submission error:', error);
+    });
   });
 }
 
